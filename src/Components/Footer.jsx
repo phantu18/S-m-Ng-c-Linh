@@ -4,6 +4,7 @@ import {
   faFacebookMessenger,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 import FacebookPage from "./FacebookPage";
 
 export default function Footer() {
@@ -24,13 +25,25 @@ export default function Footer() {
             </p>
 
             <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-gray-700">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-700"
+                aria-label="Facebook"
+              >
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-700">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-700"
+                aria-label="Messenger"
+              >
                 <FontAwesomeIcon icon={faFacebookMessenger} size="lg" />
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-700">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-700"
+                aria-label="TikTok"
+              >
                 <FontAwesomeIcon icon={faTiktok} size="lg" />
               </a>
             </div>
@@ -40,14 +53,14 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900">Company</h3>
             <ul className="mt-4 space-y-2 text-sm text-gray-500">
               <li>
-                <a href="/" className="hover:text-gray-700">
+                <Link to="/" className="hover:text-gray-700">
                   Trang Chủ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-gray-700">
+                <Link to="/about" className="hover:text-gray-700">
                   Về Chúng Tôi
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-gray-700">
@@ -55,9 +68,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-gray-700">
+                <Link to="/contact" className="hover:text-gray-700">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -66,38 +79,42 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900">Products</h3>
             <ul className="mt-4 space-y-2 text-sm text-gray-500">
               <li>
-                <a href="/sam-ngoc-linh" className="hover:text-gray-700">
+                <Link to="/sam-ngoc-linh" className="hover:text-gray-700">
                   Sâm Ngọc Linh
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/mat-ong-rung" className="hover:text-gray-700">
+                <Link to="/mat-ong-rung" className="hover:text-gray-700">
                   Mật Ong Rừng
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/nam-linh-chi" className="hover:text-gray-700">
+                <Link to="/nam-linh-chi" className="hover:text-gray-700">
                   Nấm Linh Chi
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
+
           <div>
             <h3 className="text-sm font-semibold text-gray-900">Contact</h3>
             <ul className="mt-4 space-y-2 text-sm text-gray-500">
               <li>
                 <a href="#" className="hover:text-gray-700">
-                  Địa chỉ: Ql40, Ngọc Linh, Tu Mơ Rông, KonTum.
+                  Địa chỉ: QL40, Ngọc Linh, Tu Mơ Rông, KonTum.
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-700">
+                <a
+                  href="mailto:pat18102004@gmail.com"
+                  className="hover:text-gray-700"
+                >
                   Email: pat18102004@gmail.com
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-700">
-                  HotLine: 0862 708 510
+                <a href="tel:0862708510" className="hover:text-gray-700">
+                  Hotline: 0862 708 510
                 </a>
               </li>
             </ul>
